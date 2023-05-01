@@ -16,7 +16,7 @@ public class Main {
         Connection connection = null;
         try {
 
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Planets", "postgres", "oralcumshot");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Planets", "postgres", "password");
             connection.setAutoCommit(false);
             String deleteTables = "DELETE FROM planet;" +
                     "DELETE FROM satellites";
